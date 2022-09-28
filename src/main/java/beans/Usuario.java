@@ -25,6 +25,17 @@ public class Usuario {
         this.telefono = telefono;
 
     }
+     public Usuario(String username, String primer_nombre, String segundo_nombre, 
+            String primer_apellido, String segundo_apellido,String email, String telefono) {
+        this.username = username;
+        this.primer_nombre = primer_nombre;
+        this.segundo_nombre = segundo_nombre;
+        this.primer_apellido = primer_apellido;
+        this.segundo_apellido = segundo_apellido;
+        this.email = email;
+        this.telefono = telefono;
+
+    }
 
     public String getUsername() {
         return username;

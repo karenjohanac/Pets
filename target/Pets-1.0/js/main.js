@@ -10,38 +10,49 @@ $(document).ready(function () {
     getUsuario().then(function () {
 
         $("#mi-perfil-btn").attr("href", "profile.html?username=" + username);
-
-        $("#user-saldo").html(user.saldo.toFixed(2) + "$");
-
-        getPeliculas(false, "ASC");
-
-        $("#ordenar-genero").click(ordenarPeliculas);
+        $("#user-username").html(user.username.toFixed(2)+"$");
+        
+        //$("#user-saldo").html(user.saldo.toFixed(2) + "$");
+        //getPeliculas(false, "ASC");
+        //$("#ordenar-genero").click(ordenarPeliculas);
+        //getUsuario(username);
     });
 });
 
-async function getUsuario() {
+function getUsuario(username) {
 
-    await $.ajax({
+    $.ajax({
         type: "GET",
         dataType: "html",
-        url: "./ServletUsuarioPedir",
+        url: "./ServletUsuarioListar",
         data: $.param({
             username: username
-        }),
+        }), 
         success: function (result) {
             let parsedResult = JSON.parse(result);
 
             if (parsedResult != false) {
-                user = parsedResult;
+                mostrarUsuario(parsedResult);
             } else {
-                console.log("Error recuperando los datos del usuario");
+                alert(mostrarUsuario(parsedResult));
+                //alert("Error recuperando los datos del usuario");
             }
         }
     });
 }
 
+function mostrarUsuario(usuarios){
+    let contenido = "";
 
+    $.each(usuarios,function (usuario){
+        usuario = JSON.parse(usuario);
+    });
+    
+    contenido += '<td>' +usuario.primer_nombre+ '</td>';
+    $("#peliculas-tbody").html(contenido);
+}
 
+/*
 function getPeliculas(ordenar, orden) {
 
     $.ajax({
@@ -63,6 +74,7 @@ function getPeliculas(ordenar, orden) {
         }
     });
 }
+
 function mostrarPeliculas(peliculas) {
 
     let contenido = "";
@@ -112,5 +124,4 @@ function mostrarPeliculas(peliculas) {
     $("#peliculas-tbody").html(contenido);
 }
 
-
-
+*/
