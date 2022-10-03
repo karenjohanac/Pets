@@ -1,7 +1,6 @@
 /** Acciones que se van a realizar dentro del aplicativo web **/
 package test;
 
-import beans.Pelicula;
 import beans.Usuario;
 import connection.DBConnection;
 import java.sql.ResultSet;
@@ -56,7 +55,7 @@ public class OperacionesBD {
                 String email = rs.getString("email");
                 String telefono = rs.getString("telefono");
 
-                Usuario usuario = new Usuario(email, primer_nombre, segundo_nombre, primer_apellido,
+                Usuario usuario = new Usuario(username, primer_nombre, segundo_nombre, primer_apellido, 
                         segundo_apellido, email, telefono);
                 System.out.println(usuario.toString());
             }

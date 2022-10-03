@@ -10,6 +10,12 @@ public interface IUsuarioController {
             String primer_nombre, String segundo_nombre, String primer_apellido,String segundo_apellido,
             String email,String telefono);
     
-    //public String pedir (String username);
+    public String pedir(String username);
     public String listar(String username);
+    
+    public String modificar(String username, String contrasena,
+            String primer_nombre, String segundo_nombre, String primer_apellido,String segundo_apellido,
+            String email,String telefono);
+
+    public String eliminar(String username);
 }

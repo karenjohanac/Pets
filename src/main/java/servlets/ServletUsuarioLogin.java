@@ -31,7 +31,6 @@ public class ServletUsuarioLogin extends HttpServlet {
 	 */
         @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		
 		UsuarioController usuario = new UsuarioController();
 		String username = request.getParameter("username");
@@ -49,8 +48,7 @@ public class ServletUsuarioLogin extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
         @Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {            // el doPost, obtiene el requerimiento y virifica que coincian los datos con la base de datos
-		// TODO Auto-generated method stub
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {// el doPost, obtiene el requerimiento y virifica que coincian los datos con la base de datos
 		doGet(request, response);
 	}
 

@@ -21,7 +21,7 @@
               crossorigin="anonymous" />
         <link href="css/index.css" rel="stylesheet">
         <link href="header.html" rel="import">
-        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
         
     </head>
     <body>
@@ -40,7 +40,8 @@
                         <div class="col-md-6">
                             <h1 class="h4 text-gray-900 my-3">Formulario de registro</h1>
 
-                            <form id="form-register-mascota">
+                            <form id="form-register-mascota" action="ServletMascota?accion=Guardar"
+                                  method="POST" enctype="multipart/form-data">
 
                                 <div class="form-group"> 
                                     <label for="nombre">Nombre Mascota:</label><br>
@@ -51,7 +52,6 @@
                                         required/><br>
                                 </div>
 
-
                                 <div class="form-group">
                                     <label for="edad">Edad:</label><br>
                                     <input 
@@ -60,16 +60,23 @@
                                         id="edad" /><br>
                                 </div>
 
-
                                 <div class="form-group">
                                     <label for="foto">Foto:</label><br>
                                     <input 
                                         class="form-control" 
-                                        type="text" 
-                                        id="foto" 
+                                        type="file"
+                                        name="fileImagen"
+                                        id="fileImagen" 
                                         required/><br>
                                 </div>
-
+                                
+                                <div class="form-group">
+                                    <label for="descripcion">Descripcion:</label><br>
+                                    <input 
+                                        class="form-control" 
+                                        type="text" 
+                                        id="descripcion" /><br>
+                                </div>
 
                                 <div class="form-group">
                                     <label for="tipo_mascota_">Tipo mascota:</label><br>
@@ -78,7 +85,6 @@
                                         type="text" 
                                         id="tipo_mascota_" /><br>
                                 </div>
-
 
                                 <div class="form-group">
                                     <label for="sexo">Sexo:</label><br>
@@ -110,16 +116,18 @@
                                 <div class="form-group">
                                     <label for="raza">Raza</label><br>
                                     <input 
-                                        type="password" 
+                                        type="text" 
                                         class="form-control" 
                                         id="raza" 
                                         required>
-                                </div>
-
-                                
-                                <br>
-
-                                <button type="submit" class="btn btn-primary" id="register_mascota-">Registrar Mascota</button>
+                                </div><br>
+                                <button 
+                                    type="submit" 
+                                    class="btn btn-primary" 
+                                    id="accion" 
+                                    name="accion"
+                                    value="Guardar"
+                                    >Registrar Mascota</button>
 
                             </form>
                             <hr>

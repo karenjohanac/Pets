@@ -11,7 +11,6 @@ public class Usuario {
     private String email;
     private String telefono;
 
-
     
     public Usuario(String username, String contrasena, String primer_nombre, String segundo_nombre, 
             String primer_apellido, String segundo_apellido,String email, String telefono) {

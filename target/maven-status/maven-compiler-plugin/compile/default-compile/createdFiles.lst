@@ -1,12 +1,12 @@
-servlets\ServletTest.class
-beans\Pelicula.class
+beans\Mascota.class
 beans\Usuario.class
+controller\MascotaController.class
 controller\UsuarioController.class
-servlets\pruebaServlet.class
 servlets\ServletUsuarioListar.class
-beans\Alquiler.class
+servlets\ServletUsuarioPedir.class
 controller\IUsuarioController.class
 servlets\ServletUsuarioRegister.class
 test\OperacionesBD.class
+controller\IMascotaController.class
 servlets\ServletUsuarioLogin.class
 connection\DBConnection.class

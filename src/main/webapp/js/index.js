@@ -11,6 +11,12 @@ $(document).ready(function () {
         event.preventDefault();
         registrarUsuario();
     });
+    
+    $("#form-register-mascota").submit(function (event) {
+        event.preventDefault();
+        registrarMascota();
+    });
+    
 });
 
 
@@ -87,5 +93,50 @@ function registrarUsuario() {
         $("#register-error").removeClass("d-none");
         $("#register-error").html("Las contraseñas no coinciden");
     }
+}
+
+// Funcion para el proceso de registro de usuario
+function registrarMascota() {
+
+    let nombre = $("#nombre").val();         // Captura de datos por input para almacenar en base de datos
+    let edad = $("#edad").val();
+    let foto = $("#fileImagen").val();
+    let descripcion = $("#descripcion").val();
+    let tipo_mascota_ = $("#tipo_mascota_").val();
+    let sexo = $("#sexo").val();
+    let tamanio = $("#tamanio").val();
+    let color = $("#color").val();
+    let raza = $("#raza").val();
+
+
+        $.ajax({
+            type: "GET",
+            dataType: "html",
+            url: "./ServletMascota",
+            data: $.param({
+                nombre: nombre,
+                edad: edad,
+                foto: foto,
+                descripcion: descripcion,
+                tipo_mascota_: tipo_mascota_,
+                sexo: sexo,
+                tamanio: tamanio,
+                color: color,
+                raza: raza,
+            }),
+            success: function (result) {
+                let parsedResult = JSON.parse(result);
+
+                if (parsedResult != false) {
+                    $("#register-error").addClass("d-none");
+                    alert(" Se ha registrado con exito :D ");
+                    //let username = parsedResult['username'];
+                    //document.location.href = "home.html?username=" + username;
+                } else {
+                    $("#register-error").removeClass("d-none");
+                    $("#register-error").html("Error en el registro del usuario");
+                }
+            }
+        });
 }
 
