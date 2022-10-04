@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../../css/estilos.css"/>
+        <link href="css/buscador.css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../../js/index.js"></script>
@@ -11,6 +11,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
+    
     <body>
         <div class="menuHeader"></div>
         <script>
@@ -18,7 +19,114 @@
               $('.menuHeader').load('header.html');
             });
         </script>
-        
-        <div>ADOOPTA UN AMIGO FIEL</div>
+
+        <div class="cuerpo_mensaje">
+            <div class="mensaje">
+                <h1>"Adoptar es dar una nueva oportunidad para nuestros peluditos"</h1>
+                <p>
+                    Adoptar una mascota es más que el hecho de asumir una responsabilidad.
+                    Es aprender a querer y a preocuparte por alguien más. Tener un animal de compañía 
+                    nos hace ser menos egoístas y nos enseña a dar lo mejor de nosotros, por el bien de otro ser.
+                    A ellos no les importa si eres rico o pobre, o los defectos que puedas tener.
+                    Tienen la capacidad de aceptarte tal y como eres y entregarte todo su cariño,
+                    sin esperar más que los cuides y los sepas querer. No hay que decepcionarlos.
+                </p>
+            </div>
+            <div class="imagen_adopcion">
+                <img src="img/Persona_mascota.jpg" width="500px"/>
+            </div>
+        </div>
+
+        <div class="titulo_buscador_desaparecidas">
+            <h1>Adopta un amigo fiel</h1>
+        </div>
+
+        <div class="caja">
+            <ul class="lista">
+                <div class="filtro_adopcion">
+                    <li> Especie
+                        <ul class="sublista">
+                            <li>Perro</li>
+                            <li>Gato</li>
+                            <li>Conejo</li>
+                            <li>Ave</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="filtro_adopcion">
+                    <li> Sexo
+                        <ul class="sublista">
+                            <li>Masculino</li>
+                            <li>Femenino</li>
+                        </ul>
+                    </li>
+                </div>
+                <input class="boton_filtro" type="submit" value="Buscar"/>
+
+                <div class="caja_descripcion">
+                    <div class="descripcion">
+                        <div class="contenido">
+                            <h2>Nombre de la mascota</h2>
+                            <hr>
+                            <p>Descripcion</p>
+                            <input class="boton_detalle" type="submit" value="Detalle"/>
+                        </div>
+                        <div class="imagen">
+                            <img src="img/mascota.jpg" width="230px"/>
+                        </div>
+                    </div>
+                    
+                    <div class="descripcion">
+                        <div class="contenido">
+                            <h2>Nombre de la mascota</h2>
+                            <hr>
+                            <p>Descripcion</p>
+                            <input class="boton_detalle" type="submit" value="Detalle"/>
+                        </div>
+                        <div class="imagen">
+                            <img src="img/mascota.jpg" width="230px"/>
+                        </div>
+                    </div>
+                    <div class="descripcion">
+                        <div class="contenido">
+                            <h2>Nombre de la mascota</h2>
+                            <hr>
+                            <p>Descripcion</p>
+                            <input class="boton_detalle" type="submit" value="Detalle"/>
+                        </div>
+                        <div class="imagen">
+                            <img src="img/mascota.jpg" width="230px"/>
+                        </div>
+                    </div>
+                    <div class="descripcion">
+                        <div class="contenido">
+                            <h2>Nombre de la mascota</h2>
+                            <hr>
+                            <p>Descripcion</p>
+                            <input class="boton_detalle" type="submit" value="Detalle"/>
+                        </div>
+                        <div class="imagen">
+                            <img src="img/mascota.jpg" width="230px"/>
+                        </div>
+                    </div>
+                    <div class="descripcion">
+                        <div class="contenido">
+                            <h2>Nombre de la mascota</h2>
+                            <hr>
+                            <p>Descripcion</p>
+                            <input class="boton_detalle" type="submit" value="Detalle"/>
+                        </div>
+                        <div class="imagen">
+                            <img src="img/mascota.jpg" width="230px"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="pie">
+                    <center>
+                        <img src="img/logo.jpeg" class="img" alt="">
+                        <h5>Find Your Pets© 2022 | Colombia</h5>
+                    </center>
+                    </a>
+                </div>
     </body>
 </html>

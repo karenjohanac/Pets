@@ -9,18 +9,16 @@ import java.sql.DriverManager;
 public class DBConnection {
     Connection  connection;
     static String db = "railway";
-    static String  port = "5570";
+    static String  port = "6046";
     static String  login = "root";
-    static String  password = "icb4fCXrv9iM7bLLg2MT";
-    static String ip = "containers-us-west-51.railway.app";
-    
-
-            
+    static String  password = "3lZ5ZTRrB6zjSALm4rUy";
+    static String ip = "containers-us-west-58.railway.app";
+       
     public DBConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://"+DBConnection.ip+":"+DBConnection.port+"/"+DBConnection.db;
-            connection = DriverManager.getConnection(url, this.login, this.password);
+            connection = DriverManager.getConnection(url, DBConnection.login, DBConnection.password);
             System.out.println("Conexion Exitosa");
             
         } catch (Exception ex) {

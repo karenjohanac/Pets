@@ -7,6 +7,8 @@ servlets\ServletUsuarioRegister.class
 controller\IMascotaController.class
 beans\Usuario.class
 controller\UsuarioController.class
+servlets\ServletUsuarioModificar.class
+servlets\ServletUsuarioEliminar.class
 test\OperacionesBD.class
 servlets\ServletUsuarioLogin.class
 connection\DBConnection.class
