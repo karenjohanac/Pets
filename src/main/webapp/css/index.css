@@ -88,3 +88,39 @@
 #lbl-footer{
     font-size: 18px;
 }
+/* index new*/
+.descripcion_inicio{
+    margin: 150px 0px 0px 50px;
+    float:left;
+    width:40%;
+    font-size: 20px;
+}
+.descripcion_inicio h1{
+    font-size: 50px;
+}
+
+.imagen_inicio{
+    margin: 70px 150px 0px;
+    float:right;
+    width:20%;
+    background-color: #FFA02E;
+    border-radius:10px;
+    padding:50px 50px 50px 50px;
+    width:auto;
+    height: auto;
+}
+
+.imagen_inicio img{
+    max-width: 400px;
+    max-height: 400px;
+    border-radius:10px;
+}
+div#pie_inicio{
+    float: center;
+    padding:20px;
+    width: auto;
+    height: auto;
+    margin:500px 0px 0px ;
+    background-color: #fff1e0;
+    border:10px solid white;
+}
