@@ -12,16 +12,116 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
-    <body>
-    
-        <div class="menuHeader"></div>
+    <div class="menuHeader"></div>
         <script>
             $(document).ready(function () {
               $('.menuHeader').load('header.html');
             });
         </script>
         
-        <div>MASCOTAS ENCONTRADAS</div>
+        <div class="titulo_buscador_desaparecidas">
+            <h1>Buscador de mascotas encontradas</h1>
+        </div>
+        <div class="caja">
+            <ul class="lista">
+                <div class="filtro">
+                    <li> Especie
+                        <ul class="sublista">
+                            <li>Perro</li>
+                            <li>Gato</li>
+                            <li>Conejo</li>
+                            <li>Ave</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="filtro">
+                    <li> Sexo
+                        <ul class="sublista">
+                            <li>Masculino</li>
+                            <li>Femenino</li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="filtro">
+                    <li> Color
+                        <ul class="sublista">
+                            <li>Cafe</li>
+                            <li>Blanco</li>
+                            <li>Negro</li>
+                            <li>Manchas negras</li>
+                            <li>Manchas cafe</li>
+                            <li>Manchas blancas</li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <input class="boton_filtro" type="submit" value="Buscar"/>
+
+        <div class="caja_descripcion">
+            <div class="descripcion">
+                <div class="contenido">
+                    <h2>Nombre de la mascota</h2>
+                    <hr>
+                    <p>Descripcion</p>
+                    <input class="boton_detalle" type="submit" value="Detalle"/>
+                </div>
+                <div class="imagen">
+                    <img src="img/mascota.jpg" width="230px"/>
+                </div>
+            </div>
+            <div class="descripcion">
+                <div class="contenido">
+                    <h2>Nombre de la mascota</h2>
+                    <hr>
+                    <p>Descripcion</p>
+                    <input class="boton_detalle" type="submit" value="Detalle"/>
+                </div>
+                <div class="imagen">
+                    <img src="img/mascota.jpg" width="230px"/>
+                </div>
+            </div>
+            <div class="descripcion">
+                <div class="contenido">
+                    <h2>Nombre de la mascota</h2>
+                    <hr>
+                    <p>Descripcion</p>
+                    <input class="boton_detalle" type="submit" value="Detalle"/>
+                </div>
+                <div class="imagen">
+                    <img src="img/mascota.jpg" width="230px"/>
+                </div>
+            </div>
+            <div class="descripcion">
+                <div class="contenido">
+                    <h2>Nombre de la mascota</h2>
+                    <hr>
+                    <p>Descripcion</p>
+                    <input class="boton_detalle" type="submit" value="Detalle"/>
+                </div>
+                <div class="imagen">
+                    <img src="img/mascota.jpg" width="230px"/>
+                </div>
+            </div>
+            <div class="descripcion">
+                <div class="contenido">
+                    <h2>Nombre de la mascota</h2>
+                    <hr>
+                    <p>Descripcion</p>
+                    <input class="boton_detalle" type="submit" value="Detalle"/>
+                </div>
+                <div class="imagen">
+                    <img src="img/mascota.jpg" width="230px"/>
+                </div>
+            </div>
+        </div>
+        <div id="pie">
+            <center>
+                <img src="img/logo.jpeg" class="img" alt="">
+                <h5>Find Your Pets© 2022 | Colombia</h5>
+            </center>
+        </a>
+    </div>
     
     </body>
 </html>
